@@ -3,8 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dorcas Chagas - Currículo</title>
-
+    
+    <!-- SEO Meta Tags -->
+    <title>Dorcas Chagas - Desenvolvedora Full Stack | Currículo Profissional</title>
+    <meta name="description" content="Dorcas Chagas - Desenvolvedora Full Stack especializada em JavaScript, Flutter, Node.js e tecnologias web modernas. Confira meu currículo e experiência profissional." />
+    <meta name="keywords" content="Dorcas Chagas, desenvolvedora, full stack, JavaScript, Flutter, Node.js, frontend, backend, programadora, currículo, portfolio" />
+    <meta name="author" content="Dorcas Chagas" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="pt-BR" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dorcas Chagas - Desenvolvedora Full Stack" />
+    <meta property="og:description" content="Desenvolvedora Full Stack especializada em JavaScript, Flutter, Node.js e tecnologias web modernas. Confira meu currículo e experiência profissional." />
+    <meta property="og:url" content="https://sitedc.online/curriculo/" />
+    <meta property="og:site_name" content="Dorcas Chagas - Portfolio" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:image" content="https://sitedc.online/assets/img/dorcas-chagas-profile.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Dorcas Chagas - Desenvolvedora Full Stack" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dorcas Chagas - Desenvolvedora Full Stack" />
+    <meta name="twitter:description" content="Desenvolvedora Full Stack especializada em JavaScript, Flutter, Node.js e tecnologias web modernas." />
+    <meta name="twitter:image" content="https://sitedc.online/assets/img/dorcas-chagas-profile.jpg" />
+    <meta name="twitter:image:alt" content="Dorcas Chagas - Desenvolvedora Full Stack" />
+    <meta name="twitter:creator" content="@dorcaschagas" />
+    
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#007bff" />
+    <meta name="msapplication-TileColor" content="#007bff" />
+    <link rel="canonical" href="https://sitedc.online/curriculo/" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -19,10 +61,39 @@
 
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet" />
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dorcas Chagas",
+      "jobTitle": "Desenvolvedora Full Stack",
+      "description": "Desenvolvedora Full Stack especializada em JavaScript, Flutter, Node.js e tecnologias modernas",
+      "url": "https://sitedc.online/curriculo/",
+      "sameAs": [
+        "https://linkedin.com/in/dorcaschagas",
+        "https://github.com/dorcaschagas",
+        "https://twitter.com/dorcaschagas"
+      ],
+      "knowsAbout": [
+        "JavaScript",
+        "Flutter",
+        "Node.js",
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "Desenvolvimento Web",
+        "Frontend",
+        "Backend",
+        "Full Stack"
+      ]
+    }
+    </script>
   </head>
-  <body>
+  <body itemscope itemtype="https://schema.org/Person">
     <!-- Botões de Exportação -->
-    <div class="export-buttons">
+    <!-- <div class="export-buttons position-fixed top-0 end-0 m-3">
       <button
         class="btn btn-danger btn-export"
         onclick="exportToPDF()"
@@ -30,22 +101,22 @@
       >
         <i class="fas fa-file-pdf" aria-hidden="true"></i> PDF
       </button>
-    </div>
+    </div> -->
 
     <!-- Header Section - Dinâmico -->
-    <header class="header-section text-center">
+    <header class="header-section text-center" role="banner">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="display-4 fw-bold nome" id="nome">
+            <h2 class="display-4 fw-bold nome" id="nome" itemprop="name">
               <!-- Nome será carregado dinamicamente -->
-            </h1>
-            <h3 class="mb-4" id="cargo">
+            </h2>
+            <h3 class="mb-4" id="cargo" itemprop="jobTitle">
               <!-- Cargo será carregado dinamicamente -->
             </h3>
             <div class="row justify-content-center">
               <div class="col-md-8">
-                <div class="row text-center" id="dados-pessoais">
+                <div class="row text-center" id="dados-pessoais" itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
                   <!-- Dados pessoais serão carregados dinamicamente -->
                 </div>
               </div>
@@ -56,7 +127,7 @@
     </header>
 
     <!-- Main Content - Todo dinâmico -->
-    <main class="container-fluid my-5" id="main-content">
+    <main class="container-fluid my-1" id="main-content" role="main">
       <!-- Conteúdo será gerado dinamicamente pelo JavaScript -->
     </main>
 

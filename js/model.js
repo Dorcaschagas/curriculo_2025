@@ -5,6 +5,7 @@ class CurriculoModel {
       nome: "DORCAS CHAGAS",
       cargo: "Desenvolvedora Full Stack",
       telefone: "(38) 9 9883-2698",
+      whatsapp: "(16) 9 9630-3772",
       email: "dorcaschagas53@gmail.com",
       cnh: "A e B",
       estadoCivil: "Solteira",

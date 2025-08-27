@@ -23,6 +23,10 @@ class CurriculoView {
         </div>
         <div class="col-md-4">
           <p>
+            <i class="fa-brands fa-whatsapp"  aria-hidden="true"></i>
+            <span class="no-wrap">${dados.whatsapp}</span>
+          </p>
+          <p>
             <i class="fas fa-phone" aria-hidden="true"></i>
             <span class="no-wrap">${dados.telefone}</span>
           </p>
@@ -202,7 +206,7 @@ class CurriculoView {
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 mt-4">
           <div class="card h-100">
             <div class="card-body">
               <h2 class="section-title">
@@ -277,9 +281,9 @@ class CurriculoView {
       this.mainContainer.innerHTML = `
         ${portfolioSection}
         ${resumoSection}
-        ${experienciaSection}
         ${formacaoSection}
         ${idiomasSection}
+        ${experienciaSection}
       `;
     }
   }

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.fa-whatsapp {
+  font-weight: 700 !important;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -234,7 +238,7 @@ li {
   }
 
   .header-section h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .header-section h3 {
